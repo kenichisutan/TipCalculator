@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
     private fun calculateTip()
     {
         Log.d("CREATION", "calculateTip called")
-        val stringInTextField = binding.costOfService
+        val stringInTextField = binding.costOfServiceEditText
         val cost = stringInTextField.text.toString().toDoubleOrNull() // convert to double
         val selectedId = binding.tipOptions.checkedRadioButtonId // get selected radio button
 
